@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  php:
+    build:
+      dockerfile: .docker/php
+      context: .
+    volumes:
+      - ./:/app
+    ports:
+      - "8080:8080"
+    working_dir: /app
+    entrypoint: [ "php", "/app/src/public/index.php" ]
+    environment:
+      X_LISTEN: 0.0.0.0:8080

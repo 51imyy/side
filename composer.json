@@ -1,0 +1,21 @@
+{
+    "name": "sschmitz/side",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sschmitz",
+            "email": "s-schmitz-it@proton.me"
+        }
+    ],
+    "require": {
+        "clue/framework-x": "dev-main"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    }
+}
