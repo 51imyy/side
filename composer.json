@@ -42,10 +42,10 @@
         ],
         "lint:fix": ["@lint:rector:fix"],
         "mutation": ["infection --min-msi=100 --min-covered-msi=100 --threads=4"],
-        "lint:rector": ["rector process src --dry-run -c etc/rector.php"],
-        "lint:rector:fix": ["rector process src --no-diffs -c etc/rector.php"],
+        "lint:rector": ["rector process src --dry-run -c etc/linter/rector.php"],
+        "lint:rector:fix": ["rector process src --no-diffs -c etc/linter/rector.php"],
         "lint:parallel":  ["parallel-lint src --exclude vendor"],
-        "lint:stan": ["phpstan analyse --ansi --configuration=etc/phpstan.neon"],
-        "lint:stan:gitlab": ["phpstan analyse --ansi --configuration=etc/phpstan.neon --error-format=gitlab > phpstan.report.json"]
+        "lint:stan": ["phpstan analyse --ansi --configuration=etc/linter/phpstan.neon"],
+        "lint:stan:gitlab": ["phpstan analyse --ansi --configuration=etc/linter/phpstan.neon --error-format=gitlab > phpstan.report.json"]
     }
 }
