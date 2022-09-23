@@ -3,7 +3,7 @@ version: "3"
 services:
   php:
     build:
-      dockerfile: .docker/php
+      dockerfile: .docker/php/Dockerfile
       context: .
     volumes:
       - ./:/app

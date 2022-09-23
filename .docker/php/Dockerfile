@@ -1,9 +1,8 @@
-FROM php:8.1.1-alpine AS php
 FROM composer AS composer
 FROM mlocati/php-extension-installer AS php-extension-installer
 
 
-FROM php AS dev
+FROM php:8.1.9-fpm-alpine AS dev
 # copy composer into php image
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 # copy php-extension-installer into php image
