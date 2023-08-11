@@ -1,5 +1,5 @@
 {
-    "name": "sschmitz/side",
+    "name": "51imyyy/side",
     "autoload": {
         "psr-4": {
             "App\\": "src/"
@@ -7,8 +7,8 @@
     },
     "authors": [
         {
-            "name": "sschmitz",
-            "email": "s-schmitz-it@proton.me"
+            "name": "51imyyy",
+            "email": "contact.github.shopper989@passinbox.com"
         }
     ],
     "require": {
